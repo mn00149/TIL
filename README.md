@@ -62,6 +62,32 @@ List타입은 인터페이스 ArrayList가 업캐스팅 가능!!
    - put 메서드로 입력합니다. 
    - 중복된 키 값을 허용하지 않습니다(index가 없다). 
 	만약 사용하게되면 기존의 값이 삭제된다(덮어쓰기가 된다).
-   -중복된 value는 허용 한다 
+      -중복된 value는 허용 한다 
    - 검색 결과가 없으면 null을 리턴한다. 
 Properties를 쓰는 이유=>가끔 설정파일로 쓰느 경우가 있어서 이를 객체로 변환 하여 읽을 때 사용 한다
+
+# 22.05.13
+### Dom 
+- document.getElementById(id) => 1개
+- document.getElementByTagName(name) => 배열
+- document.getElementByClassName(name) => 배열
+- document.querySelector() => 1개
+- document.querySelectorAll() => 배열
+
+## JAVA JSP
+### 자바의 요청 방식(get, post)
+#### get방식의 특징
+- url에 변수(데이터) 를 포함하여 요청한다 따라서 데이턱 노출 되어 보안상 취약점이 존제 한다.
+- 데이터는 헤더에 포함되어 전송 된다
+- 캐싱 할 수 있다
+#### post방식의 특징
+- url에 데이터를 노출 시키지 않는다. 따라서 기본 보안은 된다
+- 데이터는 body에 포함되어 전송 된다
+- 캐싱 할 수 없다
+- 회원 가입, 글쓰기, <form>등 노출 되선 안되는 데이터를 전송 할 떄 쓰인다
+### Servlet 의 request , response
+#### request 
+request에는 클라이언트에 대한 기본 정보(ip나 port정보등)가 포함된다
+또한 body에 변수(데이터)가 포함된다
+#### response
+response 에느 클라이언트를 식별 할 수 잇도록 header에 대한 정보가 들어있다
