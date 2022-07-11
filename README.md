@@ -132,3 +132,13 @@ response 에느 클라이언트를 식별 할 수 잇도록 header에 대한 정
 
 OAuth => 인등을 검증된 다른 사이트에 맡김
 
+
+
+## MessageConverter
+
+- 각 언어 마다 Data를 전송하는 객체가 다름 => 통일된 Data 전송 매체가 필요
+- 과거엔 xml, 최근엔 json이 많이 쓰임
+- java object를 json으로 json을 java object롤 변환해주는 것이 바로 Message Converter
+
+ 
+
